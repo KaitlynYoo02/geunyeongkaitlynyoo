@@ -3,425 +3,251 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Geunyeong Kaitlyn Yoo | Data Analyst Portfolio</title>
-  <meta name="description" content="Portfolio of Geunyeong Kaitlyn Yoo, Data Science graduate with experience in survey research, statistical analysis, SQL, Python, R, Stata, Excel, and data visualization." />
-  <style>
-    :root {
-      --bg: #f7f9fc;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #5f6b7a;
-      --accent: #2563eb;
-      --accent-soft: #e8f0ff;
-      --border: #dbe3ef;
-      --shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      background: linear-gradient(135deg, #ffffff 0%, #eef5ff 100%);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--text);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 14px;
-    }
-
-    .hero {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 72px 24px 80px;
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 44px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 12px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(38px, 6vw, 64px);
-      line-height: 1.05;
-      letter-spacing: -0.05em;
-    }
-
-    .hero p {
-      margin: 0 0 26px;
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 680px;
-    }
-
-    .actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 11px 16px;
-      border-radius: 10px;
-      font-weight: 700;
-      border: 1px solid var(--accent);
-    }
-
-    .button.primary {
-      background: var(--accent);
-      color: white;
-    }
-
-    .button.secondary {
-      background: white;
-      color: var(--accent);
-    }
-
-    .quick-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 26px;
-      box-shadow: var(--shadow);
-    }
-
-    .quick-card h2 {
-      margin-top: 0;
-      font-size: 20px;
-    }
-
-    .quick-card ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
-
-    main {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 48px 24px 90px;
-    }
-
-    section { margin-bottom: 62px; }
-
-    .section-title {
-      font-size: 28px;
-      margin: 0 0 18px;
-      letter-spacing: -0.03em;
-    }
-
-    .section-intro {
-      color: var(--muted);
-      max-width: 760px;
-      margin-top: -8px;
-      margin-bottom: 24px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-    }
-
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 20px;
-      letter-spacing: -0.02em;
-    }
-
-    .meta {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    .card ul {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .tag {
-      background: var(--accent-soft);
-      color: #1d4ed8;
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .skill-block {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 22px;
-    }
-
-    .skill-block h3 {
-      margin: 0 0 10px;
-      font-size: 17px;
-    }
-
-    .skill-block p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .contact {
-      background: #111827;
-      color: white;
-      border-radius: 24px;
-      padding: 34px;
-    }
-
-    .contact p { color: #cbd5e1; }
-    .contact a { color: #93c5fd; }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      padding: 28px 24px 44px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 760px) {
-      .nav { align-items: flex-start; flex-direction: column; }
-      .hero { grid-template-columns: 1fr; padding-top: 46px; }
-      .grid, .skills { grid-template-columns: 1fr; }
-      .nav-links { gap: 12px; }
-    }
-  </style>
+  <title>Kaitlyn Yoo | Research, Analytics & Strategy</title>
+  <meta name="description" content="Portfolio of Kaitlyn Yoo, a UW-Madison Data Science graduate focused on research, analytics, and business strategy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <a class="brand" href="#top">Geunyeong Kaitlyn Yoo</a>
-      <div class="nav-links">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#top">KY</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-
-    <div class="hero" id="top">
-      <div>
-        <span class="eyebrow">Data Science Graduate · Research & Analytics</span>
-        <h1>Turning data into clear, useful insights.</h1>
-        <p>
-          Recent Data Science graduate from the University of Wisconsin–Madison with experience in survey research,
-          statistical analysis, data cleaning, visualization, and stakeholder-ready reporting.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="resume.pdf" target="_blank">View Resume</a>
-          <a class="button secondary" href="mailto:02kaitlyn@gmail.com">Email Me</a>
-        </div>
-      </div>
-      <aside class="quick-card">
-        <h2>Focus Areas</h2>
-        <ul>
-          <li>Survey research and public opinion data</li>
-          <li>SQL, Python, R, Stata, Excel</li>
-          <li>Data cleaning, validation, and reporting</li>
-          <li>Market research and business strategy</li>
-          <li>English, Korean, and Mandarin Chinese</li>
-        </ul>
-      </aside>
-    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2 class="section-title">About</h2>
-      <p class="section-intro">
-        I am interested in roles where data supports better decision-making, whether through survey research,
-        market analysis, business analytics, or operations reporting. I enjoy working with messy data, finding patterns,
-        and translating analytical results into clear recommendations for both technical and non-technical audiences.
+  <main id="top">
+    <section class="hero section reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Data Science Graduate · UW–Madison</p>
+        <h1>Research. Analytics. Strategy.</h1>
+        <p class="hero-text">
+          I transform complex data into clear, actionable insights that support better business decisions.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="Geunyeong%20Yoo.pdf" target="_blank" rel="noopener">View Resume</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/geunyeongkaitlynyoo/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/kaitlynyoo02" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card tilt-card" aria-label="Portfolio summary card">
+        <div class="card-orbit"></div>
+        <p class="card-label">Focus Area</p>
+        <h2>Data-driven decision making</h2>
+        <div class="metric-grid">
+          <div>
+            <strong>SQL</strong>
+            <span>Data analysis</span>
+          </div>
+          <div>
+            <strong>Stata</strong>
+            <span>Statistics</span>
+          </div>
+          <div>
+            <strong>Python</strong>
+            <span>Modeling</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Languages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats reveal" aria-label="Highlights">
+      <article>
+        <span>01</span>
+        <h3>Survey Analytics</h3>
+        <p>Experience analyzing large-scale survey datasets and translating statistical results for stakeholders.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Business Strategy</h3>
+        <p>Led market research, financial planning, and go-to-market strategy for a first-place startup proposal.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Cross-Cultural Communication</h3>
+        <p>Communicates across Korean, English, and Mandarin Chinese in academic, business, and team settings.</p>
+      </article>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>What I bring</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card tilt-card">
+          <h3>Analytics</h3>
+          <ul>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>Stata</li>
+            <li>Microsoft Excel</li>
+          </ul>
+        </article>
+        <article class="skill-card tilt-card">
+          <h3>Research</h3>
+          <ul>
+            <li>Survey Research</li>
+            <li>Data Cleaning</li>
+            <li>Statistical Analysis</li>
+            <li>Regression Analysis</li>
+            <li>Trend Analysis</li>
+          </ul>
+        </article>
+        <article class="skill-card tilt-card">
+          <h3>Business</h3>
+          <ul>
+            <li>Market Research</li>
+            <li>Business Strategy</li>
+            <li>Reporting</li>
+            <li>Budget Tracking</li>
+            <li>Stakeholder Communication</li>
+          </ul>
+        </article>
+        <article class="skill-card tilt-card">
+          <h3>Strengths</h3>
+          <ul>
+            <li>Fast Learner</li>
+            <li>Willingness to Learn</li>
+            <li>Problem Solving</li>
+            <li>Detail-Oriented</li>
+            <li>Adaptable</li>
+          </ul>
+        </article>
+        <article class="skill-card wide tilt-card">
+          <h3>Languages</h3>
+          <div class="language-list">
+            <span>Korean · Native</span>
+            <span>English · Professional</span>
+            <span>Mandarin Chinese · Conversational</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I have applied data</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="date">Apr 2025 – May 2026 · Madison, WI</p>
+            <h3>Data Analytics Intern · University of Wisconsin Survey Center</h3>
+            <p>
+              Analyzed survey datasets using SQL and Stata, created analytical reports and visualizations, cleaned and validated complex data, and translated statistical findings into stakeholder-ready insights.
+            </p>
+            <div class="tags"><span>SQL</span><span>Stata</span><span>Survey Data</span><span>Reporting</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="date">Jan 2023 – Dec 2023 · Madison, WI</p>
+            <h3>Business Strategy Project Lead · Korean Business Student Association</h3>
+            <p>
+              Led an eight-member team through market research, competitor analysis, financial projections, and go-to-market planning for a startup business proposal that earned first place among five teams.
+            </p>
+            <div class="tags"><span>Market Research</span><span>Strategy</span><span>Leadership</span><span>Financial Planning</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="date">Jan 2024 – May 2026 · Madison, WI</p>
+            <h3>Data Science Project Member · Dot Data Science</h3>
+            <p>
+              Applied Python, statistical modeling, visualization, and predictive analytics through collaborative projects and workshops, including neural networks and sports outcome prediction.
+            </p>
+            <div class="tags"><span>Python</span><span>Predictive Analytics</span><span>Visualization</span><span>Model Interpretation</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="date">Jan 2024 – Dec 2024 · Madison, WI</p>
+            <h3>Executive Board Member · Unikists Korean Band Association</h3>
+            <p>
+              Managed event budgets, schedules, staffing, equipment, and logistics to support smooth event execution and effective resource allocation.
+            </p>
+            <div class="tags"><span>Budget Tracking</span><span>Operations</span><span>Scheduling</span><span>Teamwork</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects & case studies</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card tilt-card">
+          <div class="project-visual visual-one"></div>
+          <h3>Survey Data Analytics</h3>
+          <p>Cleaned, analyzed, and summarized survey datasets to identify trends, evaluate population segments, and support data-driven recommendations.</p>
+          <div class="tags"><span>SQL</span><span>Stata</span><span>Reports</span></div>
+        </article>
+        <article class="project-card tilt-card">
+          <div class="project-visual visual-two"></div>
+          <h3>Startup Strategy Proposal</h3>
+          <p>Built a business strategy through customer research, competitor analysis, financial projections, and market entry planning.</p>
+          <div class="tags"><span>Market Research</span><span>Finance</span><span>Strategy</span></div>
+        </article>
+        <article class="project-card tilt-card">
+          <div class="project-visual visual-three"></div>
+          <h3>Predictive Analytics Workshops</h3>
+          <p>Explored behavioral, social, and sports-related datasets using Python, statistical modeling, visualization, and model interpretation.</p>
+          <div class="tags"><span>Python</span><span>Modeling</span><span>Visualization</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>A bridge between data and decisions</h2>
+      </div>
+      <p>
+        I recently graduated from the University of Wisconsin–Madison with a Bachelor of Science in Data Science. My experience spans survey research, statistical analysis, business strategy, and operations support. I enjoy working with messy information, finding the story behind the numbers, and communicating insights in a way that helps people make better decisions.
       </p>
     </section>
 
-    <section id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Data Analytics Intern</h3>
-          <div class="meta">University of Wisconsin Survey Center · Madison, WI · Apr 2025 – May 2026</div>
-          <ul>
-            <li>Analyzed large-scale survey datasets using SQL and Stata to identify trends and evaluate population segments.</li>
-            <li>Cleaned, validated, and maintained complex datasets to support accurate research deliverables.</li>
-            <li>Created visualizations, analytical reports, and stakeholder-ready summaries of key metrics and statistical findings.</li>
-            <li>Translated statistical results into clear insights for technical and non-technical stakeholders.</li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Survey Data</span><span class="tag">SQL</span><span class="tag">Stata</span><span class="tag">Reporting</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Business Strategy Project Lead</h3>
-          <div class="meta">Korean Business Student Association · Madison, WI · Jan 2023 – Dec 2023</div>
-          <ul>
-            <li>Led an eight-member team in developing a startup business strategy through market and competitor research.</li>
-            <li>Built customer analysis, financial projections, and a go-to-market strategy to evaluate business feasibility.</li>
-            <li>Presented the final proposal to a judging panel and earned first place among five competing teams.</li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Market Research</span><span class="tag">Strategy</span><span class="tag">Leadership</span>
-          </div>
-        </article>
+    <section id="contact" class="section contact reveal">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>I am open to opportunities in data analytics, research analytics, market research, business analytics, and operations-focused roles.</p>
       </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-intro">Selected projects and experiences that show my ability to analyze data, communicate findings, and work across teams.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Survey Data Analysis & Reporting</h3>
-          <div class="meta">Research analytics project experience</div>
-          <ul>
-            <li>Worked with structured survey datasets to identify patterns, compare segments, and summarize results.</li>
-            <li>Prepared reports and visualizations focused on clarity, accuracy, and stakeholder decision-making.</li>
-          </ul>
-          <div class="tags"><span class="tag">Data Cleaning</span><span class="tag">Regression</span><span class="tag">Visualization</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Dot Data Science Projects</h3>
-          <div class="meta">Data Science Project Member · Jan 2024 – May 2026</div>
-          <ul>
-            <li>Applied Python, statistical modeling, and data visualization techniques through collaborative projects and workshops.</li>
-            <li>Analyzed behavioral, social, and sports-related datasets to evaluate predictive models and communicate findings.</li>
-          </ul>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Modeling</span><span class="tag">Team Projects</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Business Strategy Competition</h3>
-          <div class="meta">First-place team project</div>
-          <ul>
-            <li>Conducted customer, competitor, and market analysis to identify target segments and growth opportunities.</li>
-            <li>Developed financial projections and a launch strategy, then presented recommendations to a judging panel.</li>
-          </ul>
-          <div class="tags"><span class="tag">Customer Analysis</span><span class="tag">Financial Planning</span><span class="tag">Presentation</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Event Operations & Budget Tracking</h3>
-          <div class="meta">Executive Board Member · Unikists Korean Band Association</div>
-          <ul>
-            <li>Tracked event budgets, maintained financial records, and coordinated schedules, staffing, equipment, and logistics.</li>
-            <li>Collaborated with team members to monitor deadlines and support successful event execution.</li>
-          </ul>
-          <div class="tags"><span class="tag">Operations</span><span class="tag">Budget Tracking</span><span class="tag">Coordination</span></div>
-        </article>
+      <div class="contact-card">
+        <a href="mailto:02kaitlyn@gmail.com">02kaitlyn@gmail.com</a>
+        <span>Madison, Wisconsin</span>
+        <a href="https://www.linkedin.com/in/geunyeongkaitlynyoo/" target="_blank" rel="noopener">LinkedIn Profile</a>
       </div>
-    </section>
-
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills">
-        <div class="skill-block">
-          <h3>Technical Tools</h3>
-          <p>SQL, Python, R, Stata, Microsoft Excel, PowerPoint, Word, ArcGIS / ArcGIS Pro</p>
-        </div>
-        <div class="skill-block">
-          <h3>Analytics</h3>
-          <p>Data cleaning, statistical analysis, regression analysis, trend analysis, predictive modeling, data visualization</p>
-        </div>
-        <div class="skill-block">
-          <h3>Business & Communication</h3>
-          <p>Market research, reporting, stakeholder communication, resource planning, budget tracking, multilingual communication</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contact</h2>
-      <p>
-I am currently seeking entry-level analyst opportunities in data, research, marketing, business, and operations, where I can leverage analytical thinking, statistical methods, and data visualization to generate actionable insights.
-</p>
-
-<p>
-Email: <a href="mailto:02kaitlyn@gmail.com">02kaitlyn@gmail.com</a>
-LinkedIn: <a href="https://www.linkedin.com/in/geunyeongkaitlynyoo/" target="_blank">View Profile</a>
-</p>
-
-<p>
-Based in Madison, WI • Open to relocation nationwide • Open to remote, hybrid, and on-site opportunities
-</p>
-
-<p>
-<a href="resume.pdf" target="_blank">Download My Resume</a>
-</p>
     </section>
   </main>
 
   <footer>
-    © 2026 Geunyeong Kaitlyn Yoo. Built as a data analytics portfolio.
+    <p>© 2026 Kaitlyn Yoo. Built with clarity, curiosity, and data.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
