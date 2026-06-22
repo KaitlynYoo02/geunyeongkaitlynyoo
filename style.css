@@ -12,7 +12,7 @@
   --shadow: 0 24px 70px rgba(30, 41, 59, 0.13);
   --radius-lg: 28px;
   --radius-md: 20px;
-  --max: 1120px;
+  --max: 1400px;
 }
 
 * { box-sizing: border-box; }
